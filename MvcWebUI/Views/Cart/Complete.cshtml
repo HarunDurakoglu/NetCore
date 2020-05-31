@@ -1,0 +1,29 @@
+﻿@model ShippingDetailsViewsModel
+
+    <form asp-controller="Cart" asp-action="Complete" method="post">
+        <div class="form-group">
+            <label asp-for="ShippingDetail.FirstName"></label>
+            <input asp-for="ShippingDetail.FirstName" class="form-control" placeholder="Müşteri Adı" />
+        </div>
+        <div class="form-group">
+            <label asp-for="ShippingDetail.LastName"></label>
+            <input asp-for="ShippingDetail.LastName" class="form-control" placeholder="Müşteri Soyadı" />
+        </div>
+        <div class="form-group">
+            <label asp-for="ShippingDetail.Email"></label>
+            <input asp-for="ShippingDetail.Email" class="form-control" placeholder="Müşteri Email" />
+        </div>
+        <div class="form-group">
+            <label asp-for="ShippingDetail.Age"></label>
+            <input asp-for="ShippingDetail.Age" class="form-control" placeholder="Müşteri Yaşı" />
+        </div>
+        <div class="form-group">
+            <label asp-for="ShippingDetail.City"></label>
+            <input asp-for="ShippingDetail.City" class="form-control" placeholder="Müşterinin Yaşadığı Şehir" />
+        </div>
+        <div class="form-group">
+            <label asp-for="ShippingDetail.Address"></label>
+            <input asp-for="ShippingDetail.Address" class="form-control" placeholder="Müşteri Adresi" />
+        </div>
+        <input type="submit" value="Kaydet" class="btn btn-success" />
+    </form>
